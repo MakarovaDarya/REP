@@ -11,6 +11,12 @@ namespace Tumakov
         static void Main(string[] args)
         {
             Console.WriteLine("Упражнение 2.1");
+            Console.WriteLine("Как вас зовут?");
+            string name =Console.ReadLine();
+            Console.WriteLine($"Здравствуй, {name}");
+
+
+
 
         }
     }

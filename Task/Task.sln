@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumakov", "Tumakov\Tumakov.csproj", "{F9A66015-0689-408E-A29C-A737CF6FFA26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ", "DZ\DZ.csproj", "{D7F1A752-0BD9-4DB1-8F0C-C30BA0FAA7CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F9A66015-0689-408E-A29C-A737CF6FFA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A66015-0689-408E-A29C-A737CF6FFA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A66015-0689-408E-A29C-A737CF6FFA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F1A752-0BD9-4DB1-8F0C-C30BA0FAA7CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F1A752-0BD9-4DB1-8F0C-C30BA0FAA7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F1A752-0BD9-4DB1-8F0C-C30BA0FAA7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F1A752-0BD9-4DB1-8F0C-C30BA0FAA7CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
