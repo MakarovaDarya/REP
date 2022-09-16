@@ -1,0 +1,8 @@
+C:\Users\PC\Desktop\REP\Task\DZ\bin\Debug\DZ.exe.config
+C:\Users\PC\Desktop\REP\Task\DZ\bin\Debug\DZ.exe
+C:\Users\PC\Desktop\REP\Task\DZ\bin\Debug\DZ.pdb
+C:\Users\PC\Desktop\REP\Task\DZ\obj\Debug\DZ.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\REP\Task\DZ\obj\Debug\DZ.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Desktop\REP\Task\DZ\obj\Debug\DZ.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\REP\Task\DZ\obj\Debug\DZ.exe
+C:\Users\PC\Desktop\REP\Task\DZ\obj\Debug\DZ.pdb
