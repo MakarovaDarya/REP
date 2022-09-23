@@ -10,8 +10,21 @@ namespace Tumakov
     {
         static void Main(string[] args)
         {
+            string test=Console.ReadLine();
+            string[] temp = test.Split(new Char[] { ' ' });
+            foreach(string item in temp)
+            {
+                int num = int.Parse(item);
+                Console.WriteLine("Слово= "num[1]);
+            }
+
+
+
+
+
+
             Console.WriteLine("Упражнение 2.1");
-            Console.WriteLine("Как Вас зовут?");
+            Console.Write("Как Вас зовут? ");
             string name = Console.ReadLine();
             Console.WriteLine($"Здравствуй, {name}");
             Console.ReadKey();
@@ -48,6 +61,7 @@ namespace Tumakov
 
                 Console.WriteLine("ДЗ 2.2");
             }
+            
 
             Console.ReadKey();
             Console.WriteLine("Введите первый коэффициент");
