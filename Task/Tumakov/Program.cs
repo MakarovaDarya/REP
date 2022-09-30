@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,15 +12,8 @@ namespace Tumakov
     {
         static void Main(string[] args)
         {
-            string test=Console.ReadLine();
-            string[] temp = test.Split(new Char[] { ' ' });
-            foreach(string item in temp)
-            {
-                int num = int.Parse(item);
-                Console.WriteLine("Слово= "num[1]);
-            }
 
-
+            
 
 
 

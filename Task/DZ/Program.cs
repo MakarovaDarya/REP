@@ -62,8 +62,13 @@ namespace DZ
 
 
             Console.WriteLine("Задание 8");
-            
-            
+            Console.Write("Введите высоту трапеции: ");
+            int h = int.Parse(Console.ReadLine());
+            Console.Write("Введите 1 основание трапеции: ");
+            int osn1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите 2 основание трапеции: ");
+            int osn2 = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Площадь р/б трапеции равна: {0.5*(osn1+osn2)*h}");
             Console.ReadKey();
 
             Console.WriteLine("Задание 9");
@@ -109,7 +114,7 @@ namespace DZ
 
             Console.WriteLine("Задание 15");
             Random Rand = new Random();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 4; i++)
             {
                 int Ch = Rand.Next();
                 Console.WriteLine(Ch);
@@ -225,7 +230,7 @@ namespace DZ
             Console.WriteLine("в)" + CH[0] + CH[2] + CH[1] + CH[3]);
             Console.WriteLine("г)" + CH[2] + CH[3] + CH[0] + CH[1]);
             Console.ReadKey();
-            
+
 
             Console.WriteLine("Задание 25");
             Console.Write("Введите число трехзначное число n: ");
@@ -243,6 +248,7 @@ namespace DZ
             Console.ReadKey();
 
             Console.WriteLine("Задание 26");
+            Console.Write("Введите число трехзначное число n: ");
 
             Console.ReadKey();
 
@@ -250,26 +256,189 @@ namespace DZ
             Console.ReadKey();
 
             Console.WriteLine("Задание 28");
+            Console.Write("Введите первое число: ");
+            int X1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите второе число: ");
+            int X2 = int.Parse(Console.ReadLine());
+            Console.Write("Введите тртье число: ");
+            int X3 = int.Parse(Console.ReadLine());
+
+            int[] mass = { Math.Abs(X1), Math.Abs(X2), Math.Abs(X3) };
+            Console.WriteLine("Меньшее по модулю из трёх: "+mass.Min());
             Console.ReadKey();
 
             Console.WriteLine("Задание 29");
+            Console.WriteLine("Введите три числа: ");
+            int[] mass1 = new int[3];
+            for (int i = 0; i < 3; i++)
+            {
+                mass1[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Сумма большего и меньшего из трех заданных чисел: " + (mass1.Max() + mass1.Min()));
+
             Console.ReadKey();
 
             Console.WriteLine("Задание 30");
+            Console.WriteLine("Введите число: ");
+            int CHISlo = int.Parse(Console.ReadLine());
+            int colich = 0;
+            int del = 1;
+            while (del < CHISlo)
+            {
+                if (CHISlo % del == 0)
+                {
+                    colich += 1;
+                }
+                del += 1;
+            }
+            Console.WriteLine(colich);
             Console.ReadKey();
 
             Console.WriteLine("Задание 31");
+            Console.Write("Введите значение А: ");
+            double A11 = double.Parse(Console.ReadLine());
+            Console.Write("Введите значение А: ");
+            double B11 = double.Parse(Console.ReadLine());
+            Console.Write("Введите значение А: ");
+            double C11 = double.Parse(Console.ReadLine());
+            Console.Write("Введите значение А: ");
+            double D1 = double.Parse(Console.ReadLine());
+
+
+            for (int i = -100; i< 101; i++)
+            {
+                if ((A11 * Math.Pow(i, 3) + B11 * Math.Pow(i, 2) + C11 * Math.Pow(i, 1) + D)== 0)
+                {
+                    Console.WriteLine("Корнем уравнения является " + i);
+                }
+            }
             Console.ReadKey();
 
             Console.WriteLine("Задание 32");
+
             Console.ReadKey();
 
-            Console.WriteLine("Задание 33");
-            Console.ReadKey();
+            Console.WriteLine("Задание 33. Отвечайте с маленькой буквы");
+            Console.WriteLine("Вы пенсионер? ");
+            string YoN1 = Console.ReadLine();
+            Console.WriteLine("Вы студент? ");
+            string YoN2 = Console.ReadLine();
+            Console.WriteLine("Вы трудоустроены? ");
+            string YoN3 = Console.ReadLine();
+            if (((YoN1 == "да") || (YoN1 == "нет") || (YoN2 == "да") || (YoN2 == "нет")) & (YoN3 == "нет"))
+            {
+                Console.WriteLine("Вы полчаете кредит");
+            }
+            else if (((YoN1 == "да") || (YoN1 == "нет")|| (YoN2 == "да") || (YoN2 == "нет")) & (YoN3 == "да"))
+            {
+                Console.WriteLine("Вы не получаете кредит");
+            }
+
+                Console.ReadKey();
 
             Console.WriteLine("Задание 34");
+            Console.Write("Введите ваше имя: ");
+            string YourName = Console.ReadLine();
+            Console.WriteLine($"a) {YourName}");
+            Console.WriteLine($"б) Здравствуй, {YourName}");
             Console.ReadKey();
 
+            Console.WriteLine("Задание 35");
+
+            Console.ReadLine();//Привет
+            Console.Write("Как тебя зовут? \t");
+            string NNName = Console.ReadLine();//Гарри
+            Console.WriteLine($"Здравствуй, {NNName}");
+            Console.ReadLine();//Знаешь ли ты что-то о тайной комнате?
+            Console.WriteLine("Да");
+            Console.ReadLine();//Можешь ли ты рассказать?
+            Console.WriteLine("Нет");
+
+            System.Threading.Thread.Sleep(5000);
+            Console.WriteLine("Но могу показать");
+            System.Threading.Thread.Sleep(1000);
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
+
+            Console.WriteLine("Задание 36а");
+
+            int[] shtrih = new int[12];
+            Random RANDOM = new Random();
+
+            for (int i = 0; i < 12; i++)
+            {
+                shtrih[i] = RANDOM.Next(0, 10);
+            }
+            int kontr = 0;
+            int sumNechet = 0;
+            int sumChetn = 0;
+            for (int i = 0; i < 12; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sumNechet = sumNechet + shtrih[i];
+                }
+                else
+                {
+                    sumChetn = sumChetn + shtrih[i];
+                }
+            }
+
+            int summa = sumChetn * 3 + sumNechet;
+            int summa2 = summa + (10 - summa % 10);
+            if (summa % 10 != 0)
+            {
+                kontr = summa2 - summa;
+            }
+            else
+            {
+                kontr = 0;
+            }
+            Console.WriteLine(String.Join("", shtrih) + kontr);
+            Console.WriteLine(kontr);
+            Console.ReadKey();
+
+            Console.WriteLine("Задание 36b");
+
+            int[] Shtrih = new int[12];
+
+
+            for (int i = 0; i < 12; i++)
+            {
+                Shtrih[i] = int.Parse(Console.ReadLine());
+            }
+            int Kontr = 0;
+            int SumNechet = 0;
+            int SumChetn = 0;
+            for (int i = 0; i < 12; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    SumNechet = SumNechet + Shtrih[i];
+                }
+                else
+                {
+                    SumChetn = SumChetn + Shtrih[i];
+                }
+            }
+
+            int Summa = SumChetn * 3 + SumNechet;
+            int Summa2 = Summa + (10 - Summa % 10);
+            if (Summa % 10 != 0)
+            {
+                Kontr = Summa2 - Summa;
+            }
+            else
+            {
+                Kontr = 0;
+            }
+            Console.WriteLine(String.Join("", Shtrih) + Kontr);
+            Console.WriteLine(Kontr);
+
+
+            Console.ReadKey();
 
 
         }
